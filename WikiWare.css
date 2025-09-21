@@ -1,0 +1,78 @@
+wiki-container {
+    display: block; /* DO NOT EDIT */
+    position: absolute; /* DO NOT EDIT */
+    width: 100%;  /* DO NOT EDIT */
+    top: 0; /* DO NOT EDIT */
+    font-size: large;
+    overflow-x: hidden /* DO NOT EDIT */
+}
+
+wiki-page {
+    display: block; /* DO NOT EDIT. fixed the border. took ages to figure this out. CSS, HTML, and JS are the trilogy of nightmares */
+    border: 1px solid black;
+    text-align: left;
+    width: 50%;
+    min-height: 500px;
+    max-height: auto;
+    margin: auto;
+    background-color: blueviolet;
+}
+
+wiki-tablecontent {
+    display: inline;
+    border: 1px solid black;
+    min-height: 100px;
+    max-height: auto;
+    float: right;
+    min-width: 300px;
+    max-width: auto;
+    margin: 20px 20px 0px 20px;
+    padding-bottom: 10px;
+}
+
+wiki-tablecontent hr {
+    border-color: black;
+    width: 90%;
+}
+
+wiki-tablecontent h2 {
+    text-align: center;
+}
+
+wiki-tablecontentsection {
+    display: block; /* DO NOT EDIT */
+    padding-right: 10px;
+}
+
+wiki-section {
+    display: block; /* DO NOT EDIT */
+    width: auto;
+    height: auto;
+    padding: 5px 20px 5px 20px;
+}
+
+wiki-section hr {
+    border-color: black;
+}
+
+wiki-subsection {
+    display: block; /* DO NOT EDIT */
+    width: auto;
+    height: auto;
+    padding: 1px 20px 1px 0px;
+}
+
+wiki-header {
+    display: flex; /* DO NOT EDIT */
+    position: sticky; /* DO NOT EDIT */
+    top: 0;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+    column-gap: 50px;
+    background-color: magenta;
+}
+
+wiki-headersection {
+    display: inline;
+    padding: 5px 20px 5px 20px;
+}

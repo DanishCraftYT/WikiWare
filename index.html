@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="WikiWare.css">
+        <link rel="stylesheet" href="index.css">
+        <script defer src="WikiWare.js"></script>
+        <title>WikiWare</title>
+    </head>
+    <body>
+        <wiki-container>
+            <wiki-header>
+                <h1>WikiWare</h1>
+                <wiki-headersection>
+                    <details>
+                        <summary>WikiWare Details</summary>
+                        <a href="#wikiware">WikiWare</a><br>
+                        <a href="#usage">Usage</a><br>
+                        <a href="#faq">FAQ</a><br>
+                    </details>
+                </wiki-headersection>
+            </wiki-header>
+            <wiki-page>
+                <wiki-tablecontent>
+                    <wiki-tablecontentsection nobottomline="true">
+                        <ol>
+                            <a href="#wikiware">1 - WikiWare</a><br>
+                            <a href="#usage">2 - Usage</a><br>
+                            <ol>
+                                <a href="#wikicontainer">2.1 - wiki-container</a><br>
+                                <a href="#wikipage">2.2 - wiki-page</a><br>
+                                <a href="#wikitablecontent">2.3 - wiki-tablecontent</a><br>
+                                <a href="#wikitablecontentsection">2.4 - wiki-tablecontentsection</a><br>
+                                <a href="#wikisection">2.5 - wiki-section</a><br>
+                                <a href="#wikisubsection">2.6 - wiki-subsection</a><br>
+                                <a href="#wikiheader">2.7 - wiki-header</a><br>
+                                <a href="#wikiheadersection">2.8 - wiki-headersection</a><br>
+                                <a href="#nobttomlineattrib">2.9 - "nobottomline" attribute</a><br>
+                                <a href="#wikistylecss">2.10 - editing the style of your wiki</a><br>
+                            </ol>
+                            <a href="#faq">3 - FAQ</a><br>
+                        </ol>
+                    </wiki-tablecontentsection>
+                </wiki-tablecontent>
+                <wiki-section id="wikiware">
+                    <h1>WikiWare</h1>
+                    <p>WikiWare is a piece of software developed by Danish Craft to make wiki websites and applications.</p>
+                </wiki-section>
+                <wiki-section id="usage">
+                    <h1>Usage</h1>
+                    <p>to use WikiWare. first link to the WikiWare stylesheet. then add the WikiWare JavaScript script to the html file.</p>
+                    <wiki-subsection id="wikicontainer">
+                        <h2>wiki-container</h2>
+                        <p>this HTML Element contains the wiki.</p>
+                    </wiki-subsection>
+                    <wiki-subsection id="wikipage">
+                        <h2>wiki-page</h2>
+                        <p>this HTML Element contains the page with all the text.</p>
+                    </wiki-subsection>
+                    <wiki-subsection id="wikitablecontent">
+                        <h2>wiki-tablecontent</h2>
+                        <p>this HTML Element creates a Table Of Contents box which you can add links inside of to link to things in this page or other pages.</p>
+                    </wiki-subsection>
+                    <wiki-subsection id="wikitablecontentsection">
+                        <h2>wiki-tablecontentsection</h2>
+                        <p>this HTML Element creates a section inside of a "wiki-tablecontent" element.</p>
+                    </wiki-subsection>
+                    <wiki-subsection id="wikisection">
+                        <h2>wiki-section</h2>
+                        <p>this HTML Element creates a section in the wiki.</p>
+                    </wiki-subsection>
+                    <wiki-subsection id="wikisubsection">
+                        <h2>wiki-subsection</h2>
+                        <p>this HTML Element creates a subsection in the wiki.</p>
+                    </wiki-subsection>
+                    <wiki-subsection id="wikiheader">
+                        <h2>wiki-header</h2>
+                        <p>this HTML Element creates a header for the wiki page.</p>
+                    </wiki-subsection>
+                    <wiki-subsection id="wikiheadersection">
+                        <h2>wiki-headersection</h2>
+                        <p>this HTML Element creates a section used for the header in the wiki page.</p>
+                    </wiki-subsection>
+                    <wiki-subsection id="nobttomlineattrib">
+                        <h2>"nobottomline" attribute</h2>
+                        <p>the elements "wiki-section" and "wiki-tablecontentsection" have a attribute called "nobottomline" which when set to "true" removes the bottom line created by the section.</p>
+                    </wiki-subsection>
+                    <wiki-subsection id="wikistylecss">
+                        <h2>editing the style of your wiki</h2>
+                        <p>you can edit the style of your wiki by modifiying the "WikiWare.css" stylesheet to your needs. just don't modify the ones that says "DO NOT EDIT" as it will likely lead to the wiki not rendering correctly.</p>
+                    </wiki-subsection>
+                </wiki-section>
+                <wiki-section nobottomline="true" id="faq">
+                    <h1>FAQ</h1>
+                </wiki-section>
+            </wiki-page>
+        </wiki-container>
+        <footer>
+            <p>ff</p>
+        </footer>
+    </body>
+</html>
