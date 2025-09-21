@@ -4,7 +4,6 @@ wiki-container {
     width: 100%;  /* DO NOT EDIT */
     top: 0; /* DO NOT EDIT */
     font-size: large;
-    overflow-x: hidden /* DO NOT EDIT */
 }
 
 wiki-page {
@@ -48,7 +47,7 @@ wiki-section {
     display: block; /* DO NOT EDIT */
     width: auto;
     height: auto;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 10px 5px 20px;
 }
 
 wiki-section hr {
@@ -59,17 +58,18 @@ wiki-subsection {
     display: block; /* DO NOT EDIT */
     width: auto;
     height: auto;
-    padding: 1px 20px 1px 0px;
+    padding: 1px 10px 1px 0px;
 }
 
 wiki-header {
     display: flex; /* DO NOT EDIT */
     position: sticky; /* DO NOT EDIT */
     top: 0;
-    width: 100%;
-    padding: 0px 10px 0px 10px;
+    width: auto;
+    padding-left: 10px;
     column-gap: 50px;
     background-color: magenta;
+    border: 1px solid black;
 }
 
 wiki-headersection {

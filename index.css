@@ -4,6 +4,10 @@ body {
     color: black;
 }
 
+code {
+    color: crimson;
+}
+
 a:link {
     color: white;
 }
