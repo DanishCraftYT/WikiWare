@@ -11,17 +11,6 @@
         <wiki-container>
             <wiki-header>
                 <h1>WikiWare</h1>
-                <!--
-                <wiki-headersection>
-                    <details>
-                        <summary>WikiWare Details</summary>
-                        <a href="#wikiware">WikiWare</a><br>
-                        <a href="#usage">Usage</a><br>
-                        <a href="#htmlea">HTML Elements and Attributes</a><br>
-                        <a href="#faq">FAQ</a><br>
-                    </details>
-                </wiki-headersection>
-                -->
                 <wiki-headersection>
                     <wiki-details text="WikiWare Details">
                         <wiki-detailsbox>
@@ -34,45 +23,49 @@
                 </wiki-headersection>
             </wiki-header>
             <wiki-page>
-                <wiki-infocontent>
-                    <wiki-contentsection nobottomline="true">
-                        <p>Developer: Danish Craft</p>
-                        <p>WikiWare Source Code: <a href="https://github.com/DanishCraftYT/WikiWare">Github Repo</a></p>
-                    </wiki-contentsection>
-                </wiki-infocontent>
+                <wiki-sidepanel>
+                    <wiki-content text="Info">
+                        <wiki-contentsection nobottomline="true">
+                            <p>Developer: Danish Craft</p>
+                            <p>WikiWare Source Code: <a href="https://github.com/DanishCraftYT/WikiWare">Github Repo</a></p>
+                        </wiki-contentsection>
+                    </wiki-content>
+                    <wiki-content text="Table Of Contents">
+                        <wiki-contentsection nobottomline="true">
+                            <ol>
+                                <a href="#wikiware">1 - WikiWare</a><br>
+                                <a href="#usage">2 - Usage</a><br>
+                                <ol>
+                                    <a href="#contenttutorial">2.1 - Wiki Content</a><br>
+                                    <a href="#headertutorial">2.2 - Wiki Header</a><br>
+                                    <a href="#nblattribtutorial">2.3 - "nobottomline" Attribute</a><br>
+                                    <a href="#wikistylecss">2.4 - editing the style of your wiki</a><br>
+                                </ol>
+                                <a href="#htmlea">3 - HTML Elements and Attributes</a><br>
+                                <ol>
+                                    <a href="#wikicontainer">3.1 - wiki-container</a><br>
+                                    <a href="#wikipage">3.2 - wiki-page</a><br>
+                                    <a href="#wikicontent">3.3 - wiki-content</a><br>
+                                    <a href="#wikicontenttextattrib">3.4 - wiki-content "text" Attribute</a><br>
+                                    <a href="#wikicontentsection">3.5 - wiki-contentsection</a><br>
+                                    <a href="#wikisidepanel">3.6 - wiki-sidepanel</a><br>
+                                    <a href="#wikisection">3.7 - wiki-section</a><br>
+                                    <a href="#wikisubsection">3.8 - wiki-subsection</a><br>
+                                    <a href="#wikiheader">3.9 - wiki-header</a><br>
+                                    <a href="#wikiheadersection">3.10 - wiki-headersection</a><br>
+                                    <a href="#wikidetails">3.11 - wiki-details</a><br>
+                                    <a href="#wikidetailsbox">3.12 - wiki-detailsbox</a><br>
+                                    <a href="#nobttomlineattrib">3.13 - "nobottomline" attribute</a><br>
+                                </ol>
+                                <a href="#faq">4 - FAQ</a><br>
+                            </ol>
+                        </wiki-contentsection>
+                    </wiki-content>
+                </wiki-sidepanel>
                 <wiki-section id="wikiware">
                     <h1>WikiWare</h1>
                     <p>WikiWare is a piece of software developed by Danish Craft to make wiki websites and applications.</p>
                 </wiki-section>
-                <wiki-tablecontent>
-                    <wiki-contentsection nobottomline="true">
-                        <ol>
-                            <a href="#wikiware">1 - WikiWare</a><br>
-                            <a href="#usage">2 - Usage</a><br>
-                            <ol>
-                                <a href="#tablecontenttutorial">2.1 - Wiki Table Of Contents</a><br>
-                                <a href="#infocontenttutorial">2.2 - Wiki Info Content</a><br>
-                                <a href="#headertutorial">2.3 - Wiki Header</a><br>
-                                <a href="#nblattribtutorial">2.4 - "nobottomline" Attribute</a><br>
-                                <a href="#wikistylecss">2.5 - editing the style of your wiki</a><br>
-                            </ol>
-                            <a href="#htmlea">3 - HTML Elements and Attributes</a><br>
-                            <ol>
-                                <a href="#wikicontainer">3.1 - wiki-container</a><br>
-                                <a href="#wikipage">3.2 - wiki-page</a><br>
-                                <a href="#wikitablecontent">3.3 - wiki-tablecontent</a><br>
-                                <a href="#wikiinfocontent">3.4 - wiki-infocontent</a><br>
-                                <a href="#wikicontentsection">3.5 - wiki-contentsection</a><br>
-                                <a href="#wikisection">3.6 - wiki-section</a><br>
-                                <a href="#wikisubsection">3.7 - wiki-subsection</a><br>
-                                <a href="#wikiheader">3.8 - wiki-header</a><br>
-                                <a href="#wikiheadersection">3.9 - wiki-headersection</a><br>
-                                <a href="#nobttomlineattrib">3.10 - "nobottomline" attribute</a><br>
-                            </ol>
-                            <a href="#faq">3 - FAQ</a><br>
-                        </ol>
-                    </wiki-contentsection>
-                </wiki-tablecontent>
                 <wiki-section id="usage">
                     <h1>Usage</h1>
                     <p>
@@ -81,20 +74,16 @@
                         inside it you can put in the <code>wiki-page</code> element which will contain the text for whatever you wanna write about.<br><br>
 
                         wiki pages are split into sections and sub-sections. these allow you to group stuff together on your page. use <code>wiki-section</code> to create a section inside your page. then use
-                        <code>wiki-subsection</code> inside your <code>wiki-section</code> to create a sub-section.<br>
+                        <code>wiki-subsection</code> inside your <code>wiki-section</code> to create a sub-section.
                     </p>
-                    <wiki-subsection id="tablecontenttutorial">
-                        <h2>Wiki Table Of Contents</h2>
+                    <wiki-subsection id="contenttutorial">
+                        <h2>Wiki Content</h2>
                         <p>
-                            you can also add a table of contents to your wiki page. to do so. add <code>wiki-tablecontent</code> inside of your <code>wiki-page</code> element to create a table of content box.
-                            you can use <code>wiki-contentsection</code> to create a section inside of your table of content box.
-                        </p>
-                    </wiki-subsection>
-                    <wiki-subsection id="infocontenttutorial">
-                        <h2>Wiki Info Content</h2>
-                        <p>
-                            you can also add a info content box to your wiki page. to do so. add <code>wiki-content</code> inside of your <code>wiki-page</code> element to create a info box.
-                            you can use <code>wiki-contentsection</code> to create a section inside of your wiki content box.
+                            you can also add a content box to your wiki page. to do so. add <code>wiki-content</code> inside of your <code>wiki-page</code> element to create a content box.
+                            you can use <code>wiki-contentsection</code> to create a section inside of your content box.
+                            if you want it to have a title. you can add the <code>text</code> attribute to your <code>wki-content</code> element.<br><br>
+
+                            it's highly recommended to use <code>wiki-sidepanel</code> when you have multiple <code>wiki-content</code>'s next to each other to make them appear in a row instead of a column.
                         </p>
                     </wiki-subsection>
                     <wiki-subsection id="headertutorial">
@@ -104,10 +93,17 @@
                             you can use <code>wiki-headersection</code> to create a new section inside the header for your wiki page.
                         </p>
                     </wiki-subsection>
+                    <wiki-subsection id="detailstutorial">
+                        <h2>Wiki Details</h2>
+                        <p>
+                            you can also use <code>wiki-details</code> to create something like the <code>details</code> element in HTML. add the <code>wiki-detailsbox</code> elment inside the <code>wiki-details</code> element to
+                            create the box that is displayed when you press the button in the <code>wiki-details</code> element. you can add elements that you want displayed inside the details box to the <code>wiki-detailsbox</code> element.
+                        </p>
+                    </wiki-subsection>
                     <wiki-subsection id="nblattribtutorial">
                         <h2>"nobottomline" Attribute</h2>
                         <p>
-                            <code>wiki-section</code> and <code>wiki-tablecontentsection</code> has a attribute called <code>nobottomline</code> which when set to "true" removes the bottom line created by their section.<br>
+                            <code>wiki-section</code> and <code>wiki-tablecontentsection</code> has a attribute called <code>nobottomline</code> which when set to "true" removes the bottom line created by their section.
                         </p>
                     </wiki-subsection>
                     <wiki-subsection id="wikistylecss">
@@ -126,17 +122,21 @@
                         <h2>wiki-page</h2>
                         <p>this HTML Element contains the page with all the text.</p>
                     </wiki-subsection>
-                    <wiki-subsection id="wikitablecontent">
-                        <h2>wiki-tablecontent</h2>
-                        <p>this HTML Element creates a Table Of Contents box which you can add links inside of to link to things in this page or other pages.</p>
+                    <wiki-subsection id="wikicontent">
+                        <h2>wiki-content</h2>
+                        <p>this HTML Element creates a content box which you can add text and other things to.</p>
                     </wiki-subsection>
-                    <wiki-subsection id="wikiinfocontent">
-                        <h2>wiki-infocontent</h2>
-                        <p>this HTML Element creates a Info box which you can add information and other things inside of.</p>
+                    <wiki-subsection id="wikicontenttextattrib">
+                        <h2>wiki-content "text" Attribute</h2>
+                        <p>you can add the <code>text</code> attribute to your <code>wiki-content</code> element to give it a title.</p>
                     </wiki-subsection>
                     <wiki-subsection id="wikicontentsection">
                         <h2>wiki-contentsection</h2>
-                        <p>this HTML Element creates a section inside of a "wiki-tablecontent" or "wiki-infocontent" element.</p>
+                        <p>this HTML Element creates a section inside of a <code>wiki-content</code> element.</p>
+                    </wiki-subsection>
+                    <wiki-subsection id="wikisidepanel">
+                        <h2>wiki-sidepanel</h2>
+                        <p>use this HTML Element if you want multiple <code>wiki-content</code> elements next to each other to render them in a row instead of a column.</p>
                     </wiki-subsection>
                     <wiki-subsection id="wikisection">
                         <h2>wiki-section</h2>
@@ -154,9 +154,17 @@
                         <h2>wiki-headersection</h2>
                         <p>this HTML Element creates a section used for the header in the wiki page.</p>
                     </wiki-subsection>
+                    <wiki-subsection id="wikidetails">
+                        <h2>wiki-details</h2>
+                        <p>this HTML Element creates a button which can be combined with a <code>wiki-detailsbox</code> to create something similar to the <code>details</code> element in HTML.</p>
+                    </wiki-subsection>
+                    <wiki-subsection id="wikidetailsbox">
+                        <h2>wiki-detailsbox</h2>
+                        <p>this HTML Element creates a box for <code>wiki-details</code> to either render or not render when the user presses on it.</p>
+                    </wiki-subsection>
                     <wiki-subsection id="nobttomlineattrib">
                         <h2>"nobottomline" attribute</h2>
-                        <p>the elements "wiki-section" and "wiki-tablecontentsection" have a attribute called "nobottomline" which when set to "true" removes the bottom line created by the section.</p>
+                        <p>the elements <code>wiki-section</code> and <code>wiki-contentsection</code> have a attribute called "nobottomline" which when set to "true" removes the bottom line created by the section.</p>
                     </wiki-subsection>
                 </wiki-section>
                 <wiki-section nobottomline="true" id="faq">

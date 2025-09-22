@@ -26,17 +26,13 @@ class WikiSubSection extends HTMLElement {
     }
 }
 
-class WikiTableContent extends HTMLElement {
+class WikiContent extends HTMLElement {
     constructor() {
         super();
-        this.insertAdjacentHTML("afterbegin", "<h2>Table Of Contents</h2><hr>");
-    }
-}
-
-class WikiInfoContent extends HTMLElement {
-    constructor() {
-        super();
-        this.insertAdjacentHTML("afterbegin", "<h2>Info</h2><hr>");
+        let text = this.getAttribute("text");
+        if (text != null) {
+            this.insertAdjacentHTML("afterbegin", `<h2>${this.getAttribute("text")}</h2><hr>`);
+        }
     }
 }
 
@@ -47,6 +43,12 @@ class WikiContentSection extends HTMLElement {
             return;
         }
         this.insertAdjacentHTML("afterend", "<hr>");
+    }
+}
+
+class WikiSidePanel extends HTMLElement {
+    constructor() {
+        super();
     }
 }
 
@@ -94,9 +96,9 @@ customElements.define("wiki-page", WikiPage);
 customElements.define("wiki-section", WikiSection);
 customElements.define("wiki-subsection", WikiSubSection);
 
-customElements.define("wiki-tablecontent", WikiTableContent);
-customElements.define("wiki-infocontent", WikiInfoContent);
+customElements.define("wiki-content", WikiContent);
 customElements.define("wiki-contentsection", WikiContentSection);
+customElements.define("wiki-sidepanel", WikiSidePanel);
 
 customElements.define("wiki-header", WikiHeader);
 customElements.define("wiki-headersection", WikiHeaderSection);

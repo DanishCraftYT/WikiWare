@@ -17,54 +17,6 @@ wiki-page {
     background-color: blueviolet;
 }
 
-wiki-tablecontent {
-    display: inline;
-    border: 1px solid black;
-    min-height: 100px;
-    max-height: auto;
-    float: right;
-    min-width: 300px;
-    max-width: auto;
-    margin: 20px 20px 0px 20px;
-    padding: 10px;
-}
-
-wiki-tablecontent hr {
-    border-color: black;
-    width: 90%;
-}
-
-wiki-tablecontent h2 {
-    text-align: center;
-}
-
-wiki-infocontent {
-    display: inline;
-    border: 1px solid black;
-    min-height: 100px;
-    max-height: auto;
-    float: right;
-    min-width: 300px;
-    max-width: auto;
-    margin: 20px 20px 0px 20px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-wiki-infocontent hr {
-    border-color: black;
-    width: 90%;
-}
-
-wiki-infocontent h2 {
-    text-align: center;
-}
-
-wiki-contentsection {
-    display: block; /* DO NOT EDIT */
-    padding-right: 10px;
-}
-
 wiki-section {
     display: block; /* DO NOT EDIT */
     width: auto;
@@ -83,6 +35,47 @@ wiki-subsection {
     padding: 1px 10px 1px 0px;
 }
 
+wiki-content {
+    display: inline;
+    float: right;
+    border: 1px solid black;
+    min-height: 100px;
+    max-height: auto;
+    min-width: 300px;
+    max-width: auto;
+    margin: 20px 20px 0px 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+wiki-content ul {
+    text-align: left;
+}
+
+wiki-content ol {
+    text-align: left;
+}
+
+wiki-content hr {
+    border-color: black;
+    width: 90%;
+}
+
+wiki-content h2 {
+    text-align: center;
+}
+
+wiki-contentsection {
+    display: block; /* DO NOT EDIT */
+    padding-right: 10px;
+}
+
+wiki-sidepanel {
+    display: flex; /* DO NOT EDIT */
+    float: right;
+    flex-direction: column;
+}
+
 wiki-header {
     display: flex; /* DO NOT EDIT */
     position: sticky; /* DO NOT EDIT */
@@ -96,7 +89,7 @@ wiki-header {
 
 wiki-headersection {
     display: inline;
-    padding: 5px 20px 5px 20px;
+    padding: 30px 20px 5px 20px;
 }
 
 wiki-details {
@@ -104,12 +97,21 @@ wiki-details {
 }
 
 wiki-details button {
-    outline: none;
+    background-color: transparent;
+    border-width: 0px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+wiki-details i {
+    margin-bottom: 3px;
 }
 
 wiki-detailsbox {
-    display: none;
+    display: none; /* DO NOT EDIT */
+    position: absolute; /* DO NOT EDIT */
     border: 1px solid black;
+    background-color: blueviolet;
 }
 
 .arrow {

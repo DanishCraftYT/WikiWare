@@ -2,7 +2,6 @@
 a simple HTML, CSS, and Javascript framework for making basic wikies that look like Wikipedia.<br>
 
 # TODO
-* test images to make sure they are compatible with the framework.<br>
 * consider adding a "wiki-headersubsection" for grouping multiple header items together.<br>
-* consider making a custom "details" element which works like the one from fandom wikies.<br>
-* consider combining "wiki-tablecontent" and "wiki-infocontent" elements into a "wiki-content" element which will have a attribute for it's top text.<br>
+* consider making a custom "subdetails" element which works like the one from fandom wikies.<br>
+* add a "wiki-boxsection" element which draws a border around the section instead of creating a line at the bottom of it.<br>
