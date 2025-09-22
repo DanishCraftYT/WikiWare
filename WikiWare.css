@@ -26,7 +26,7 @@ wiki-tablecontent {
     min-width: 300px;
     max-width: auto;
     margin: 20px 20px 0px 20px;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 wiki-tablecontent hr {
@@ -38,7 +38,29 @@ wiki-tablecontent h2 {
     text-align: center;
 }
 
-wiki-tablecontentsection {
+wiki-infocontent {
+    display: inline;
+    border: 1px solid black;
+    min-height: 100px;
+    max-height: auto;
+    float: right;
+    min-width: 300px;
+    max-width: auto;
+    margin: 20px 20px 0px 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+wiki-infocontent hr {
+    border-color: black;
+    width: 90%;
+}
+
+wiki-infocontent h2 {
+    text-align: center;
+}
+
+wiki-contentsection {
     display: block; /* DO NOT EDIT */
     padding-right: 10px;
 }
@@ -75,4 +97,34 @@ wiki-header {
 wiki-headersection {
     display: inline;
     padding: 5px 20px 5px 20px;
+}
+
+wiki-details {
+    display: inline;
+}
+
+wiki-details button {
+    outline: none;
+}
+
+wiki-detailsbox {
+    display: none;
+    border: 1px solid black;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
